@@ -19,12 +19,12 @@ const Computerscore=document.getElementById("Computerscore");
            
           }
       else if(Number(e.target.innerHTML)=== 0 && computerchoice === 2){
-       innerelee.innerHTML="<br>You win! rock beats scissors";
+       innerelee.innerHTML="You win! rock beats scissors";
        count +=1
        yourscore.innerHTML=count; 
 }
      else{
-           innerelee.innerHTML="<br>You lose! paper beats rock";
+           innerelee.innerHTML="You lose! paper beats rock";
            countcomputer +=1
      Computerscore.innerHTML=countcomputer; 
 
