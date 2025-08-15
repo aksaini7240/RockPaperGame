@@ -1,4 +1,4 @@
-*{
+/* *{
     padding :0%;
     margin :0%;
     
@@ -56,4 +56,95 @@
     display: flex;
     justify-content: center; 
    }
-   
+    */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Bitcount Single", system-ui;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    padding-left: 25%;
+    font-size: 25px;
+}
+
+.buttons {
+    padding-left: 25%;
+}
+
+#rock {
+    font-size: 40px;
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+    background-color: red;
+}
+
+#paper {
+    font-size: 40px;
+    margin-left: 12px;
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+    background-color: rgb(108, 99, 237);
+}
+
+#scissors {
+    font-size: 40px;
+    margin-left: 12px;
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+    background-color: rgb(20, 117, 31);
+}
+
+#innerele {
+    font-size: 30px;
+    margin-top: 20px;
+    height: 40px;
+}
+
+#score1, #score2 {
+    display: flex;
+    justify-content: center;
+}
+
+/* 📱 मोबाइल के लिए Media Query */
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h3 {
+        padding-left: 0;
+        font-size: 20px;
+    }
+
+    .buttons {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    #rock, #paper, #scissors {
+        font-size: 28px;
+        height: 50px;
+        width: 50px;
+        margin-left: 0;
+    }
+
+    #innerele {
+        font-size: 22px;
+    }
+}
