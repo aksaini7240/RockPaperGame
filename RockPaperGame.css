@@ -76,6 +76,8 @@ h3 {
 }
 
 .buttons {
+    display:flex;
+    flex-direction:colum;
     padding-left: 25%;
 }
 
